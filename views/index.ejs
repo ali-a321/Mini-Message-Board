@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="/style/styles.css" type="text/css"/>
+</head>
+<body>
+   
+    <h1>Welcome to the Message Board! </h1>
+    <a href="/new">  Add to the message board</a>
+    <div class="list">
+        <% if (messages.length) { %>
+      <ul class="board">
+          <% messages.forEach((post) => { %>
+        <li class="singlePost">
+            <span class="author"> 
+                <%= post.author  %> </span> <span class="date">(<%= post.time + " on "+ post.date %>)</span>         
+            <div> <%= post.message %></div>
+        </li> <% }) %>
+      </ul> <% } %>
+    </div>
+</body>
+</html>
