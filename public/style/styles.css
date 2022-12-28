@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.submitBtn{
+    width: 4rem;
+    height: 1.5rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#author{
+    width: 10rem;
+}
+#message{
+    width: 10rem;
+  height: 200px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.list{
+    background-color: whitesmoke;
+    margin-top: 1rem;
+}
+.author{
+    font-weight: bold;
+}
+.date{
+    font-weight: normal;
+}
+li{
+    list-style: none;
+    
+}
+ul{
+    list-style: none;
+    padding-left:0;
+    margin: 5px;
+}
+.board{
+    margin-top: 1rem;
+}
+.singlePost{
+    margin-top: 1rem;
+    border-bottom: 2px solid black;
+   max-width: 40vw;
+}
